@@ -563,6 +563,7 @@
 				DA2E587C1A80AE6E002D8755 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA2E587D1A80AE6E002D8755 /* Build configuration list for PBXNativeTarget "TranslateKeyboardContainingTests" */ = {
 			isa = XCConfigurationList;
@@ -571,6 +572,7 @@
 				DA2E587F1A80AE6E002D8755 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA2E588E1A80AF5B002D8755 /* Build configuration list for PBXNativeTarget "TranslateKeyboard" */ = {
 			isa = XCConfigurationList;
@@ -579,6 +581,7 @@
 				DA2E58901A80AF5B002D8755 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

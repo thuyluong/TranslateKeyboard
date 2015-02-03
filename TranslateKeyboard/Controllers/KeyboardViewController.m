@@ -22,17 +22,18 @@ typedef NS_ENUM(NSUInteger, ShiftStatus)
 @property (nonatomic, assign) ShiftStatus shiftStatus;
 
 // IBOutlet
-@property (nonatomic, strong) IBOutlet UIView *letterRow1;
-@property (nonatomic, strong) IBOutlet UIView *letterRow2;
-@property (nonatomic, strong) IBOutlet UIView *letterRow3;
+@property (nonatomic, strong) IBOutletCollection(UIButton) NSArray *letterButtonsCollection;
+@property (nonatomic, weak) IBOutlet UIView *letterRow1;
+@property (nonatomic, weak) IBOutlet UIView *letterRow2;
+@property (nonatomic, weak) IBOutlet UIView *letterRow3;
 
-@property (nonatomic, strong) IBOutlet UIView *numberRow1;
-@property (nonatomic, strong) IBOutlet UIView *numberRow2;
-@property (nonatomic, strong) IBOutlet UIView *symbolRow1;
-@property (nonatomic, strong) IBOutlet UIView *symbolRow2;
-@property (nonatomic, strong) IBOutlet UIView *numberSymbolRow3;
+@property (nonatomic, weak) IBOutlet UIView *numberRow1;
+@property (nonatomic, weak) IBOutlet UIView *numberRow2;
+@property (nonatomic, weak) IBOutlet UIView *symbolRow1;
+@property (nonatomic, weak) IBOutlet UIView *symbolRow2;
+@property (nonatomic, weak) IBOutlet UIView *numberSymbolRow3;
 
-@property (nonatomic, strong) IBOutlet UIView *functionRow4;
+@property (nonatomic, weak) IBOutlet UIView *functionRow4;
 
 @end
 
@@ -50,19 +51,19 @@ typedef NS_ENUM(NSUInteger, ShiftStatus)
     [super viewDidLoad];
     
     // Perform custom UI setup here
-    self.nextKeyboardButton = [UIButton buttonWithType:UIButtonTypeSystem];
-    
-    [self.nextKeyboardButton setTitle:NSLocalizedString(@"Next Keyboard", @"Title for 'Next Keyboard' button") forState:UIControlStateNormal];
-    [self.nextKeyboardButton sizeToFit];
-    self.nextKeyboardButton.translatesAutoresizingMaskIntoConstraints = NO;
-    
-    [self.nextKeyboardButton addTarget:self action:@selector(advanceToNextInputMode) forControlEvents:UIControlEventTouchUpInside];
-    
-    [self.view addSubview:self.nextKeyboardButton];
-    
-    NSLayoutConstraint *nextKeyboardButtonLeftSideConstraint = [NSLayoutConstraint constraintWithItem:self.nextKeyboardButton attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0.0];
-    NSLayoutConstraint *nextKeyboardButtonBottomConstraint = [NSLayoutConstraint constraintWithItem:self.nextKeyboardButton attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0];
-    [self.view addConstraints:@[nextKeyboardButtonLeftSideConstraint, nextKeyboardButtonBottomConstraint]];
+//    self.nextKeyboardButton = [UIButton buttonWithType:UIButtonTypeSystem];
+//    
+//    [self.nextKeyboardButton setTitle:NSLocalizedString(@"Next Keyboard", @"Title for 'Next Keyboard' button") forState:UIControlStateNormal];
+//    [self.nextKeyboardButton sizeToFit];
+//    self.nextKeyboardButton.translatesAutoresizingMaskIntoConstraints = NO;
+//    
+//    [self.nextKeyboardButton addTarget:self action:@selector(advanceToNextInputMode) forControlEvents:UIControlEventTouchUpInside];
+//    
+//    [self.view addSubview:self.nextKeyboardButton];
+//    
+//    NSLayoutConstraint *nextKeyboardButtonLeftSideConstraint = [NSLayoutConstraint constraintWithItem:self.nextKeyboardButton attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0.0];
+//    NSLayoutConstraint *nextKeyboardButtonBottomConstraint = [NSLayoutConstraint constraintWithItem:self.nextKeyboardButton attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0];
+//    [self.view addConstraints:@[nextKeyboardButtonLeftSideConstraint, nextKeyboardButtonBottomConstraint]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -88,6 +89,8 @@ typedef NS_ENUM(NSUInteger, ShiftStatus)
     }
     [self.nextKeyboardButton setTitleColor:textColor forState:UIControlStateNormal];
 }
+
+#pragma mark - Initialization
 
 
 #pragma mark - Action
@@ -130,12 +133,21 @@ typedef NS_ENUM(NSUInteger, ShiftStatus)
     [self.textDocumentProxy insertText:@"\n"];
 }
 
+
 #pragma mark - Helper
+
 - (void)shiftKeys
 {
-    
+    if (self.shiftStatus == ShiftStatusOn) {
+        for (UIButton* letterButton in self.letterButtonsCollection) {
+            [letterButton setTitle:letterButton.titleLabel.text.uppercaseString forState:UIControlStateNormal];
+        }
+    } else {
+        for (UIButton* letterButton in self.letterButtonsCollection) {
+            [letterButton setTitle:letterButton.titleLabel.text.lowercaseString forState:UIControlStateNormal];
+        }
+    }
 }
-
 
 
 
