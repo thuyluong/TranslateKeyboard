@@ -8,8 +8,32 @@
 
 #import "KeyboardViewController.h"
 
+
+typedef NS_ENUM(NSUInteger, ShiftStatus)
+{
+    ShiftStatusOn,
+    ShiftStatusOff,
+    ShiftStatusCapslock
+};
+
 @interface KeyboardViewController ()
 @property (nonatomic, strong) UIButton *nextKeyboardButton;
+
+@property (nonatomic, assign) ShiftStatus shiftStatus;
+
+// IBOutlet
+@property (nonatomic, strong) IBOutlet UIView *letterRow1;
+@property (nonatomic, strong) IBOutlet UIView *letterRow2;
+@property (nonatomic, strong) IBOutlet UIView *letterRow3;
+
+@property (nonatomic, strong) IBOutlet UIView *numberRow1;
+@property (nonatomic, strong) IBOutlet UIView *numberRow2;
+@property (nonatomic, strong) IBOutlet UIView *symbolRow1;
+@property (nonatomic, strong) IBOutlet UIView *symbolRow2;
+@property (nonatomic, strong) IBOutlet UIView *numberSymbolRow3;
+
+@property (nonatomic, strong) IBOutlet UIView *functionRow4;
+
 @end
 
 @implementation KeyboardViewController
@@ -19,6 +43,8 @@
     
     // Add custom view sizing constraints here
 }
+
+#pragma mark - Life Cycle
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -44,6 +70,9 @@
     // Dispose of any resources that can be recreated
 }
 
+
+#pragma mark - UITextInputDelegate
+
 - (void)textWillChange:(id<UITextInput>)textInput {
     // The app is about to change the document's contents. Perform any preparation here.
 }
@@ -59,5 +88,55 @@
     }
     [self.nextKeyboardButton setTitleColor:textColor forState:UIControlStateNormal];
 }
+
+
+#pragma mark - Action
+
+- (IBAction)keyPressed:(id)sender
+{
+    UIButton *button = (UIButton *)sender;
+    [self.textDocumentProxy insertText:button.titleLabel.text];
+}
+
+- (IBAction)globalKeyPressed:(id)sender
+{
+    [self advanceToNextInputMode];
+}
+
+- (IBAction)backSpaceKeyPressed:(id)sender
+{
+    [self.textDocumentProxy deleteBackward];
+}
+
+- (IBAction)spaceKeyPressed:(id)sender
+{
+    [self.textDocumentProxy insertText:@" "];
+}
+
+- (IBAction)shiftKeyPressed:(id)sender
+{
+    self.shiftStatus = (self.shiftStatus == ShiftStatusOn) ? ShiftStatusOff : ShiftStatusOn;
+    [self shiftKeys];
+}
+
+- (void)shiftKeyDoubleTapped
+{
+    self.shiftStatus = ShiftStatusCapslock;
+    [self shiftKeys];
+}
+
+- (IBAction)returnKeyPressed:(id)sender
+{
+    [self.textDocumentProxy insertText:@"\n"];
+}
+
+#pragma mark - Helper
+- (void)shiftKeys
+{
+    
+}
+
+
+
 
 @end

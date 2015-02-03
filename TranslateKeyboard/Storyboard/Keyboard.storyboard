@@ -31,9 +31,6 @@
                                         <state key="highlighted">
                                             <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="keyPressed:" destination="x0S-zo-xMU" eventType="touchUpInside" id="Q9a-ev-jaI"/>
-                                        </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAh-0G-lL0">
                                         <rect key="frame" x="60" y="0.0" width="60" height="150"/>
@@ -82,9 +79,6 @@
                                         <state key="highlighted">
                                             <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="keyPressed:" destination="x0S-zo-xMU" eventType="touchUpInside" id="sYa-gp-wdx"/>
-                                        </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aze-0f-6w6">
                                         <rect key="frame" x="300" y="0.0" width="60" height="150"/>
@@ -205,9 +199,6 @@
                                         <state key="highlighted">
                                             <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="keyPressed:" destination="x0S-zo-xMU" eventType="touchUpInside" id="8YG-nH-bvk"/>
-                                        </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GP5-5I-NiI">
                                         <rect key="frame" x="90" y="0.0" width="60" height="150"/>
@@ -220,9 +211,6 @@
                                         <state key="highlighted">
                                             <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="keyPressed:" destination="x0S-zo-xMU" eventType="touchUpInside" id="vrL-UK-elo"/>
-                                        </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0e-QW-b2e">
                                         <rect key="frame" x="150" y="0.0" width="60" height="150"/>
@@ -235,9 +223,6 @@
                                         <state key="highlighted">
                                             <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="keyPressed:" destination="x0S-zo-xMU" eventType="touchUpInside" id="xKv-vy-lCv"/>
-                                        </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcs-WS-NRW">
                                         <rect key="frame" x="210" y="0.0" width="60" height="150"/>
@@ -262,9 +247,6 @@
                                         <state key="highlighted">
                                             <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="keyPressed:" destination="x0S-zo-xMU" eventType="touchUpInside" id="SVL-CJ-FVf"/>
-                                        </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7K-pD-5fg">
                                         <rect key="frame" x="330" y="0.0" width="60" height="150"/>
@@ -277,9 +259,6 @@
                                         <state key="highlighted">
                                             <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="keyPressed:" destination="x0S-zo-xMU" eventType="touchUpInside" id="1XJ-7f-Nl6"/>
-                                        </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EbN-RO-JMe">
                                         <rect key="frame" x="390" y="0.0" width="60" height="150"/>
@@ -371,9 +350,6 @@
                                         <state key="highlighted" image="shift_0HL">
                                             <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="shiftKeyPressed:" destination="x0S-zo-xMU" eventType="touchUpInside" id="mRD-K9-V9F"/>
-                                        </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVv-qY-8RY">
                                         <rect key="frame" x="90" y="0.0" width="60" height="150"/>
@@ -386,9 +362,6 @@
                                         <state key="highlighted">
                                             <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="keyPressed:" destination="x0S-zo-xMU" eventType="touchUpInside" id="dgc-x2-MfP"/>
-                                        </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UwR-bz-gyH">
                                         <rect key="frame" x="150" y="0.0" width="60" height="150"/>
@@ -401,9 +374,6 @@
                                         <state key="highlighted">
                                             <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="keyPressed:" destination="x0S-zo-xMU" eventType="touchUpInside" id="leF-Li-w1w"/>
-                                        </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IjG-gh-425">
                                         <rect key="frame" x="210" y="0.0" width="60" height="150"/>
@@ -416,9 +386,6 @@
                                         <state key="highlighted">
                                             <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="keyPressed:" destination="x0S-zo-xMU" eventType="touchUpInside" id="kTj-Mx-8He"/>
-                                        </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKU-UL-Y0D">
                                         <rect key="frame" x="270" y="0.0" width="60" height="150"/>
@@ -431,9 +398,6 @@
                                         <state key="highlighted">
                                             <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="keyPressed:" destination="x0S-zo-xMU" eventType="touchUpInside" id="tPa-L3-Mm8"/>
-                                        </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4a-MR-DhX">
                                         <rect key="frame" x="330" y="0.0" width="60" height="150"/>
@@ -458,9 +422,6 @@
                                         <state key="highlighted">
                                             <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="keyPressed:" destination="x0S-zo-xMU" eventType="touchUpInside" id="HI3-4E-pmF"/>
-                                        </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePq-6x-N5A">
                                         <rect key="frame" x="450" y="0.0" width="60" height="150"/>
@@ -473,9 +434,6 @@
                                         <state key="highlighted">
                                             <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="keyPressed:" destination="x0S-zo-xMU" eventType="touchUpInside" id="5tp-LB-N1R"/>
-                                        </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a79-QO-TdV" userLabel="backspace">
                                         <rect key="frame" x="510" y="0.0" width="90" height="150"/>
@@ -543,9 +501,6 @@
                                         <state key="highlighted">
                                             <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="keyPressed:" destination="x0S-zo-xMU" eventType="touchUpInside" id="OfA-Pq-7eD"/>
-                                        </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tYU-I7-N8R">
                                         <rect key="frame" x="60" y="0.0" width="60" height="150"/>
@@ -570,9 +525,6 @@
                                         <state key="highlighted">
                                             <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="keyPressed:" destination="x0S-zo-xMU" eventType="touchUpInside" id="6SN-KU-x5u"/>
-                                        </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwv-aG-BdH">
                                         <rect key="frame" x="180" y="0.0" width="60" height="150"/>
@@ -585,9 +537,6 @@
                                         <state key="highlighted">
                                             <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="keyPressed:" destination="x0S-zo-xMU" eventType="touchUpInside" id="gGj-y2-64Q"/>
-                                        </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZj-s0-t45">
                                         <rect key="frame" x="240" y="0.0" width="60" height="150"/>
@@ -612,9 +561,6 @@
                                         <state key="highlighted">
                                             <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="keyPressed:" destination="x0S-zo-xMU" eventType="touchUpInside" id="QYv-XA-cDu"/>
-                                        </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fp5-Zf-3fs">
                                         <rect key="frame" x="360" y="0.0" width="60" height="150"/>
@@ -627,9 +573,6 @@
                                         <state key="highlighted">
                                             <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="keyPressed:" destination="x0S-zo-xMU" eventType="touchUpInside" id="2lQ-6W-GSr"/>
-                                        </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lPE-oo-PUp">
                                         <rect key="frame" x="420" y="0.0" width="60" height="150"/>
@@ -666,9 +609,6 @@
                                         <state key="highlighted">
                                             <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="keyPressed:" destination="x0S-zo-xMU" eventType="touchUpInside" id="n0i-Zv-iZS"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -765,9 +705,6 @@
                                         <state key="highlighted">
                                             <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="keyPressed:" destination="x0S-zo-xMU" eventType="touchUpInside" id="Nf5-yM-Ris"/>
-                                        </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hfi-fd-cF2">
                                         <rect key="frame" x="240" y="0.0" width="60" height="150"/>
@@ -780,9 +717,6 @@
                                         <state key="highlighted">
                                             <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="keyPressed:" destination="x0S-zo-xMU" eventType="touchUpInside" id="xSb-UG-6X5"/>
-                                        </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="329-kV-s9V">
                                         <rect key="frame" x="300" y="0.0" width="60" height="150"/>
@@ -819,9 +753,6 @@
                                         <state key="highlighted">
                                             <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="keyPressed:" destination="x0S-zo-xMU" eventType="touchUpInside" id="Dvs-k8-WBP"/>
-                                        </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gju-5G-Cx0">
                                         <rect key="frame" x="480" y="0.0" width="60" height="150"/>
@@ -834,9 +765,6 @@
                                         <state key="highlighted">
                                             <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="keyPressed:" destination="x0S-zo-xMU" eventType="touchUpInside" id="One-se-29h"/>
-                                        </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YzX-lP-5cg">
                                         <rect key="frame" x="540" y="0.0" width="60" height="150"/>
@@ -849,9 +777,6 @@
                                         <state key="highlighted">
                                             <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="keyPressed:" destination="x0S-zo-xMU" eventType="touchUpInside" id="J4a-6q-lFm"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -924,9 +849,6 @@
                                         <state key="highlighted">
                                             <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="keyPressed:" destination="x0S-zo-xMU" eventType="touchUpInside" id="KZp-zc-ouL"/>
-                                        </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceo-Pr-iZS">
                                         <rect key="frame" x="120" y="0.0" width="60" height="150"/>
@@ -951,9 +873,6 @@
                                         <state key="highlighted">
                                             <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="keyPressed:" destination="x0S-zo-xMU" eventType="touchUpInside" id="lvq-U1-0cI"/>
-                                        </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XhD-Xu-xlR">
                                         <rect key="frame" x="240" y="0.0" width="60" height="150"/>
@@ -966,9 +885,6 @@
                                         <state key="highlighted">
                                             <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="keyPressed:" destination="x0S-zo-xMU" eventType="touchUpInside" id="luL-Ji-KxO"/>
-                                        </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Y4-jY-YzG">
                                         <rect key="frame" x="300" y="0.0" width="60" height="150"/>
@@ -981,9 +897,6 @@
                                         <state key="highlighted">
                                             <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="keyPressed:" destination="x0S-zo-xMU" eventType="touchUpInside" id="Wgi-kd-fnX"/>
-                                        </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSB-j0-YNO">
                                         <rect key="frame" x="360" y="0.0" width="60" height="150"/>
@@ -1008,9 +921,6 @@
                                         <state key="highlighted">
                                             <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="keyPressed:" destination="x0S-zo-xMU" eventType="touchUpInside" id="4ft-rb-F2o"/>
-                                        </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e86-9G-WaE">
                                         <rect key="frame" x="480" y="0.0" width="60" height="150"/>
@@ -1023,9 +933,6 @@
                                         <state key="highlighted">
                                             <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="keyPressed:" destination="x0S-zo-xMU" eventType="touchUpInside" id="2xl-Cu-1vU"/>
-                                        </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIk-u0-DgY">
                                         <rect key="frame" x="540" y="0.0" width="60" height="150"/>
@@ -1038,9 +945,6 @@
                                         <state key="highlighted">
                                             <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="keyPressed:" destination="x0S-zo-xMU" eventType="touchUpInside" id="pzI-aC-PqW"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1125,9 +1029,6 @@
                                         <state key="highlighted">
                                             <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="keyPressed:" destination="x0S-zo-xMU" eventType="touchUpInside" id="TNZ-yx-74Z"/>
-                                        </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V4H-kU-l8h">
                                         <rect key="frame" x="180" y="0.0" width="60" height="150"/>
@@ -1152,9 +1053,6 @@
                                         <state key="highlighted">
                                             <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="keyPressed:" destination="x0S-zo-xMU" eventType="touchUpInside" id="GFE-Kl-bXV"/>
-                                        </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3g-8F-jbK">
                                         <rect key="frame" x="300" y="0.0" width="60" height="150"/>
@@ -1167,9 +1065,6 @@
                                         <state key="highlighted">
                                             <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="keyPressed:" destination="x0S-zo-xMU" eventType="touchUpInside" id="45c-7u-1ZQ"/>
-                                        </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E7a-q4-3Go">
                                         <rect key="frame" x="360" y="0.0" width="60" height="150"/>
@@ -1194,9 +1089,6 @@
                                         <state key="highlighted">
                                             <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="keyPressed:" destination="x0S-zo-xMU" eventType="touchUpInside" id="HTc-R6-66S"/>
-                                        </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0uX-or-h3M">
                                         <rect key="frame" x="480" y="0.0" width="60" height="150"/>
@@ -1221,9 +1113,6 @@
                                         <state key="highlighted">
                                             <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="keyPressed:" destination="x0S-zo-xMU" eventType="touchUpInside" id="ewm-pX-vHJ"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1283,9 +1172,6 @@
                                         <state key="highlighted" image="symbolsHL">
                                             <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="switchKeyboardMode:" destination="x0S-zo-xMU" eventType="touchUpInside" id="6hZ-Cp-Do0"/>
-                                        </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ge-KG-IoS">
                                         <rect key="frame" x="150" y="0.0" width="60" height="150"/>
@@ -1298,9 +1184,6 @@
                                         <state key="highlighted">
                                             <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="keyPressed:" destination="x0S-zo-xMU" eventType="touchUpInside" id="zPV-19-Pbf"/>
-                                        </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ust-NV-xb1">
                                         <rect key="frame" x="210" y="0.0" width="60" height="150"/>
@@ -1313,9 +1196,6 @@
                                         <state key="highlighted">
                                             <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="keyPressed:" destination="x0S-zo-xMU" eventType="touchUpInside" id="ig0-y5-OLV"/>
-                                        </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSJ-CW-I9b">
                                         <rect key="frame" x="270" y="0.0" width="60" height="150"/>
@@ -1340,9 +1220,6 @@
                                         <state key="highlighted">
                                             <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="keyPressed:" destination="x0S-zo-xMU" eventType="touchUpInside" id="4qe-2K-SBH"/>
-                                        </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osD-XA-Rxv">
                                         <rect key="frame" x="390" y="0.0" width="60" height="150"/>
@@ -1413,9 +1290,6 @@
                                         <state key="highlighted" image="numbersHL">
                                             <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="switchKeyboardMode:" destination="x0S-zo-xMU" eventType="touchUpInside" id="33o-4T-Tc9"/>
-                                        </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Pf-wY-RhS" userLabel="globe">
                                         <rect key="frame" x="90" y="0.0" width="90" height="150"/>
@@ -1439,9 +1313,6 @@
                                         <state key="highlighted">
                                             <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="spaceKeyPressed:" destination="x0S-zo-xMU" eventType="touchUpInside" id="bqO-6S-fUm"/>
-                                        </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fA-rS-bI4" userLabel="return">
                                         <rect key="frame" x="510" y="0.0" width="90" height="150"/>
@@ -1453,9 +1324,6 @@
                                         <state key="highlighted" image="returnHL">
                                             <color key="titleColor" red="0.1799606788" green="0.42691390470000001" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="returnKeyPressed:" destination="x0S-zo-xMU" eventType="touchUpInside" id="val-4l-ZQK"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
