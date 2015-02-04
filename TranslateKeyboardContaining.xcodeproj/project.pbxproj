@@ -17,6 +17,7 @@
 		DA2E588D1A80AF5B002D8755 /* TranslateKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DA2E58841A80AF5B002D8755 /* TranslateKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DA2E589A1A80CB01002D8755 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2E58961A80CB01002D8755 /* KeyboardViewController.m */; };
 		DA2E589B1A80CB01002D8755 /* Keyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2E58991A80CB01002D8755 /* Keyboard.storyboard */; };
+		DAE97DCE1A8207F800386A40 /* KeyboardImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAE97DCD1A8207F800386A40 /* KeyboardImages.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		DA2E58951A80CB01002D8755 /* KeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
 		DA2E58961A80CB01002D8755 /* KeyboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
 		DA2E58991A80CB01002D8755 /* Keyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Keyboard.storyboard; sourceTree = "<group>"; };
+		DAE97DCD1A8207F800386A40 /* KeyboardImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = KeyboardImages.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,8 +162,9 @@
 		DA2E58851A80AF5B002D8755 /* TranslateKeyboard */ = {
 			isa = PBXGroup;
 			children = (
-				DA2E58941A80CB01002D8755 /* Controllers */,
+				DAE97DCA1A82071500386A40 /* Resources */,
 				DA2E58971A80CB01002D8755 /* Models */,
+				DA2E58941A80CB01002D8755 /* Controllers */,
 				DA2E58981A80CB01002D8755 /* Storyboard */,
 				DA2E58861A80AF5B002D8755 /* Supporting Files */,
 			);
@@ -198,6 +201,14 @@
 				DA2E58991A80CB01002D8755 /* Keyboard.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		DAE97DCA1A82071500386A40 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DAE97DCD1A8207F800386A40 /* KeyboardImages.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +279,12 @@
 				TargetAttributes = {
 					DA2E58561A80AE6D002D8755 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = BXU3B85A8F;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					DA2E586F1A80AE6E002D8755 = {
 						CreatedOnToolsVersion = 6.1;
@@ -275,6 +292,11 @@
 					};
 					DA2E58831A80AF5B002D8755 = {
 						CreatedOnToolsVersion = 6.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -320,6 +342,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAE97DCE1A8207F800386A40 /* KeyboardImages.xcassets in Resources */,
 				DA2E589B1A80CB01002D8755 /* Keyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -470,6 +493,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TranslateKeyboardContaining/TranslateKeyboardContaining.entitlements;
 				INFOPLIST_FILE = TranslateKeyboardContaining/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -480,6 +504,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TranslateKeyboardContaining/TranslateKeyboardContaining.entitlements;
 				INFOPLIST_FILE = TranslateKeyboardContaining/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -523,6 +548,7 @@
 		DA2E588F1A80AF5B002D8755 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -537,6 +563,7 @@
 		DA2E58901A80AF5B002D8755 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TranslateKeyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
