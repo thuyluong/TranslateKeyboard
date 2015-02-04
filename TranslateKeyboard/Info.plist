@@ -33,14 +33,12 @@
 			<key>PrimaryLanguage</key>
 			<string>en-US</string>
 			<key>RequestsOpenAccess</key>
-			<true/>
+			<false/>
 		</dict>
 		<key>NSExtensionMainStoryboard</key>
 		<string>Keyboard</string>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.keyboard-service</string>
-		<key>NSExtensionPrincipalClass</key>
-		<string>KeyboardViewController</string>
 	</dict>
 </dict>
 </plist>

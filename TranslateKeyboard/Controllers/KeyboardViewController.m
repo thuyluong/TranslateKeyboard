@@ -35,6 +35,8 @@ typedef NS_ENUM(NSUInteger, ShiftStatus)
 
 @property (nonatomic, weak) IBOutlet UIView *functionRow4;
 
+@property (nonatomic, weak) IBOutlet UIButton *shiftKey;
+
 @end
 
 @implementation KeyboardViewController
@@ -47,10 +49,18 @@ typedef NS_ENUM(NSUInteger, ShiftStatus)
 
 #pragma mark - Life Cycle
 
+- (id)init
+{
+    self = [super initWithNibName:@"KeyboardViewController" bundle:nil];
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Perform custom UI setup here
+    [self initializeKeyboardView];
+    
+//    // Perform custom UI setup here
 //    self.nextKeyboardButton = [UIButton buttonWithType:UIButtonTypeSystem];
 //    
 //    [self.nextKeyboardButton setTitle:NSLocalizedString(@"Next Keyboard", @"Title for 'Next Keyboard' button") forState:UIControlStateNormal];
@@ -91,7 +101,16 @@ typedef NS_ENUM(NSUInteger, ShiftStatus)
 }
 
 #pragma mark - Initialization
+- (void)initializeKeyboardView
+{
+    [self initShiftKeyStatus];
+    [self shiftKeys];
 
+    UITapGestureRecognizer *doubleTapOnShiftKey = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(shiftKeyDoubleTapped)];
+    doubleTapOnShiftKey.numberOfTapsRequired = 2;
+    [self.shiftKey addGestureRecognizer:doubleTapOnShiftKey];
+    
+}
 
 #pragma mark - Action
 
@@ -118,13 +137,20 @@ typedef NS_ENUM(NSUInteger, ShiftStatus)
 
 - (IBAction)shiftKeyPressed:(id)sender
 {
-    self.shiftStatus = (self.shiftStatus == ShiftStatusOn) ? ShiftStatusOff : ShiftStatusOn;
+    if (self.shiftStatus == ShiftStatusCapslock) {
+        self.shiftStatus = ShiftStatusOff;
+    }
+    else {
+        self.shiftStatus = (self.shiftStatus == ShiftStatusOn) ? ShiftStatusOff : ShiftStatusOn;
+    }
+    [self updateShiftKeyStatus];
     [self shiftKeys];
 }
 
 - (void)shiftKeyDoubleTapped
 {
     self.shiftStatus = ShiftStatusCapslock;
+    [self updateShiftKeyStatus];
     [self shiftKeys];
 }
 
@@ -136,9 +162,43 @@ typedef NS_ENUM(NSUInteger, ShiftStatus)
 
 #pragma mark - Helper
 
+- (void)initShiftKeyStatus
+{
+    switch (self.textDocumentProxy.autocapitalizationType) {
+        case UITextAutocapitalizationTypeNone:
+            self.shiftStatus = ShiftStatusOff;
+            break;
+        case UITextAutocapitalizationTypeWords:
+            self.shiftStatus = ShiftStatusOn;
+            break;
+        case UITextAutocapitalizationTypeSentences:
+            self.shiftStatus = ShiftStatusOn;
+            break;
+        case UITextAutocapitalizationTypeAllCharacters:
+            self.shiftStatus = ShiftStatusCapslock;
+            break;
+    }
+    [self updateShiftKeyStatus];
+}
+
+- (void)updateShiftKeyStatus
+{
+    switch (self.shiftStatus) {
+        case ShiftStatusOn:
+            [self.shiftKey setImage:[UIImage imageNamed:@"shiftKey_on"] forState:UIControlStateNormal];
+            break;
+        case ShiftStatusOff:
+            [self.shiftKey setImage:[UIImage imageNamed:@"shiftKey_off"] forState:UIControlStateNormal];
+            break;
+        case ShiftStatusCapslock:
+            [self.shiftKey setImage:[UIImage imageNamed:@"capslock"] forState:UIControlStateNormal];
+            break;
+    }
+}
+
 - (void)shiftKeys
 {
-    if (self.shiftStatus == ShiftStatusOn) {
+    if (self.shiftStatus == ShiftStatusOn || self.shiftStatus == ShiftStatusCapslock) {
         for (UIButton* letterButton in self.letterButtonsCollection) {
             [letterButton setTitle:letterButton.titleLabel.text.uppercaseString forState:UIControlStateNormal];
         }
