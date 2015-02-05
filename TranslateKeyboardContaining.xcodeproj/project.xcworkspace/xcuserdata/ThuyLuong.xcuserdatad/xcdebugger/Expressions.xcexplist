@@ -3,6 +3,23 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "-[KeyboardViewController viewDidLoad]:KeyboardViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[KeyboardViewController viewDidAppear:]:KeyboardViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.letterRow1">
+            </PersistentString>
+            <PersistentString
+               value = "self.view">
+            </PersistentString>
+            <PersistentString
+               value = "self.keyboardInputView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "-[ViewController viewDidLoad]:ViewController.m">
          <PersistentStrings>
             <PersistentString

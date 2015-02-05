@@ -22,6 +22,7 @@ typedef NS_ENUM(NSUInteger, ShiftStatus)
 @property (nonatomic, assign) ShiftStatus shiftStatus;
 
 // IBOutlet
+@property (nonatomic, weak) IBOutlet UIView *keyboardInputView;
 @property (nonatomic, strong) IBOutletCollection(UIButton) NSArray *letterButtonsCollection;
 @property (nonatomic, weak) IBOutlet UIView *letterRow1;
 @property (nonatomic, weak) IBOutlet UIView *letterRow2;
@@ -61,6 +62,20 @@ typedef NS_ENUM(NSUInteger, ShiftStatus)
     [self initializeKeyboardView];
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    CGFloat _expandedHeight = CGRectGetHeight(self.view.frame) + 60;
+    NSLayoutConstraint *_heightConstraint =
+    [NSLayoutConstraint constraintWithItem: self.view
+                                 attribute: NSLayoutAttributeHeight
+                                 relatedBy: NSLayoutRelationEqual
+                                    toItem: nil
+                                 attribute: NSLayoutAttributeNotAnAttribute
+                                multiplier: 0.0
+                                  constant: _expandedHeight];
+    [self.view addConstraint: _heightConstraint];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated
@@ -83,6 +98,12 @@ typedef NS_ENUM(NSUInteger, ShiftStatus)
         textColor = [UIColor blackColor];
     }
     [self.nextKeyboardButton setTitleColor:textColor forState:UIControlStateNormal];
+}
+
+- (UIView *)inputAccessoryView
+{
+    
+    return nil;
 }
 
 #pragma mark - Initialization
